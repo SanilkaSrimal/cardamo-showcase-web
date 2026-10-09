@@ -1,0 +1,1542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cardamo | ML-Driven Smart Cardamom Cultivation Management System</title>
+  <meta name="description" content="SLIIT IT4010 Research Project: Cardamo - An integrated machine learning decision support system for Sri Lankan cardamom disease diagnosis, pod monitoring, quality grading, and market analytics.">
+  <meta name="keywords" content="Cardamo, Cardamom AI, SLIIT Research, Agriculture Machine Learning, Leaf Disease Detection, Capsule Borer, Pod Quality Grading, Sri Lanka Spices">
+  <meta name="author" content="Cardamo Research Team - SLIIT Faculty of Computing">
+
+  <!-- Open Graph Meta -->
+  <meta property="og:title" content="Cardamo | ML-Driven Smart Cardamom Cultivation Management System">
+  <meta property="og:description" content="Intelligent decision support system for highland Sri Lankan cardamom plantations. Early disease detection, pod maturity, quality grading, and market forecasting.">
+  <meta property="og:image" content="assets/images/hero-banner.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Pure CSS Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       HEADER & NAVIGATION (100% PURE HTML & CSS)
+       ========================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      <a href="#home" class="brand-link" aria-label="Cardamo Home">
+        <img src="assets/images/logo.png" alt="Cardamo Logo" class="brand-logo-img">
+        <div class="brand-text">
+          <span class="brand-title">CARDAMO</span>
+          <span class="brand-sub">Smart Agriculture</span>
+        </div>
+      </a>
+
+      <!-- Pure CSS Mobile Toggle Checkbox -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox" aria-label="Toggle navigation menu">
+
+      <!-- Navigation Actions & Hamburger Label -->
+      <div class="nav-actions">
+        <a href="#downloads" class="btn btn-primary btn-sm">Documents</a>
+        <label for="nav-toggle" class="menu-toggle" aria-label="Toggle menu button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </label>
+      </div>
+
+      <!-- Navigation Menu -->
+      <nav class="nav-menu" id="navMenu">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#spotlight" class="nav-link">Overview</a>
+        <a href="#project-scope" class="nav-link">Project Scope</a>
+        <a href="#methodology" class="nav-link">Methodology</a>
+        <a href="#technologies" class="nav-link">Technologies</a>
+        <a href="#milestones" class="nav-link">Milestones</a>
+        <a href="#downloads" class="nav-link">Downloads</a>
+        <a href="#team" class="nav-link">About Us</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       HERO SECTION
+       ========================================================================== -->
+  <section class="hero-section" id="home">
+    <div class="hero-bg-media"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+      <h1 class="hero-title text-gradient">CARDAMO</h1>
+      <h2 class="hero-tagline-main">ML-Driven Smart Cardamom Cultivation Management System</h2>
+      <p class="hero-sub-academic">Department of Information Technology • Faculty of Computing • SLIIT</p>
+
+      <p class="hero-desc">
+        Empowering small and medium-scale cardamom farmers across the central highlands of <strong>Kandy, Badulla, and Matale</strong>. 
+        An integrated artificial intelligence decision support system combining field leaf disease diagnostics, 
+        smart pod maturity & capsule borer detection, objective quality grading, and harvest market forecasting.
+      </p>
+
+      <div class="hero-cta-group">
+        <a href="#project-scope" class="btn btn-primary">
+          <span>Explore Research Scope</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#methodology" class="btn btn-secondary">
+          <span>System Architecture</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </a>
+        <a href="#downloads" class="btn btn-secondary">
+          <span>Downloads</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+        </a>
+      </div>
+
+      <!-- Key Project Statistics Strip -->
+      <div class="hero-stats-grid">
+        <div class="stat-item">
+          <span class="stat-value">4</span>
+          <span class="stat-label">Intelligent AI Modules</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-value">5</span>
+          <span class="stat-label">Diagnosed Leaf Diseases</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-value">25%–40%</span>
+          <span class="stat-label">Yield Loss Mitigation</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-value">3</span>
+          <span class="stat-label">Highland Regions Covered</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SPOTLIGHT / REAL-WORLD FIELD PREVIEW
+       ========================================================================== -->
+  <section class="spotlight-section" id="spotlight">
+    <div class="container">
+      <div class="spotlight-card">
+        <div class="spotlight-text">
+          <div class="section-tag">Designed for Sri Lankan Field Conditions</div>
+          <h3>Direct On-Field Intelligence Built for Highland Plantations</h3>
+          <p>
+            Cardamom farmers in Sri Lanka face severe hurdles in remote highland plantations where traditional web portals 
+            and complex PDF manuals are impractical. <strong>Cardamo</strong> is engineered as an intuitive, mobile-first 
+            decision tool that delivers instant computer vision diagnostics directly at the farm level.
+          </p>
+          <div class="feature-pill-list">
+            <div class="feature-pill-item">
+              <div class="feature-pill-icon">✓</div>
+              <span><strong>Instant Leaf Disease Scanner:</strong> Detects Leaf Blight, Leaf Spot, Mosaic, Chlorotic Streak, and Vein Clearing from camera snaps.</span>
+            </div>
+            <div class="feature-pill-item">
+              <div class="feature-pill-icon">✓</div>
+              <span><strong>Smart Pod Maturity & Borer Locator:</strong> YOLO-powered detection of capsule borer holes and green harvesting readiness.</span>
+            </div>
+            <div class="feature-pill-item">
+              <div class="feature-pill-icon">✓</div>
+              <span><strong>National Quality Grading:</strong> Computer-vision dimensional analysis and color extraction mapping to Sri Lanka DOA & EDB export standards.</span>
+            </div>
+            <div class="feature-pill-item">
+              <div class="feature-pill-icon">✓</div>
+              <span><strong>Farmer Harvest Price Insights:</strong> Localized price forecasting based on expected harvest quantity and seasonal export trends.</span>
+            </div>
+          </div>
+          <a href="#methodology" class="btn btn-primary btn-sm">Explore How It Works</a>
+        </div>
+
+        <div class="spotlight-visual">
+          <div class="spotlight-img-frame">
+            <img src="assets/images/app-preview.jpg" alt="Cardamo Mobile Application in Farm Field" class="spotlight-img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PROJECT SCOPE SECTION
+       ========================================================================== -->
+  <section class="scope-section" id="project-scope">
+    <div class="container">
+      <div class="center-text">
+        <div class="section-tag">Comprehensive Scope & Foundations</div>
+        <h2 class="section-title">Project Scope & Problem Analysis</h2>
+        <p class="section-subtitle">
+          Addressing the systemic agricultural, ecological, and economic bottlenecks in Sri Lanka's high-value "Queen of Spices" cultivation.
+        </p>
+      </div>
+
+      <!-- Problem vs Solution Comparison -->
+      <div class="scope-grid-split">
+        <div class="glass-card problem-card">
+          <div class="card-header-icon">
+            <div class="icon-box icon-box-red">⚠️</div>
+            <h3 style="font-size: 1.4rem;">The Agricultural Problem</h3>
+          </div>
+          <p style="margin-bottom: 1rem;">
+            Small- and medium-scale cardamom farmers in <strong>Kandy, Badulla, and Matale</strong> depend on cardamom as their primary livelihood.
+            Presently, they rely strictly on manual observation and personal experience:
+          </p>
+          <ul class="tasks-list">
+            <li class="task-item"><strong>Devastating Yield Reductions:</strong> Leaf blight and leaf spot spread rapidly in humid mountain microclimates, leading to 25%–40% seasonal harvest destruction.</li>
+            <li class="task-item"><strong>Premature Harvesting & Borer Attacks:</strong> Capsule borers leave microscopic punctures that ruin batches. Farmers harvest immature green pods due to lack of objective maturity markers.</li>
+            <li class="task-item"><strong>Subjective Quality Grading:</strong> Farmers sell unsorted or subjectively graded pods, receiving low baseline prices while export traders reap premium margins.</li>
+            <li class="task-item"><strong>Agrochemical Overuse & Soil Degradation:</strong> Delayed manual detection leads to frantic over-application of chemicals, threatening the delicate Knuckles Forest ecosystem.</li>
+          </ul>
+        </div>
+
+        <div class="glass-card solution-card">
+          <div class="card-header-icon">
+            <div class="icon-box icon-box-emerald">🌱</div>
+            <h3 style="font-size: 1.4rem;">The Cardamo Solution</h3>
+          </div>
+          <p style="margin-bottom: 1rem;">
+            <strong>Cardamo</strong> introduces an integrated, machine learning–based mobile decision support framework tailored for real-field conditions:
+          </p>
+          <ul class="tasks-list">
+            <li class="task-item"><strong>Multi-Disease Vision Diagnostics:</strong> Rapid identification of 5 prevalent local foliar diseases trained on field-captured highland datasets.</li>
+            <li class="task-item"><strong>YOLO Pod & Pest Localization:</strong> Real-time detection of capsule borer holes and multi-factor maturity scoring (color, size, geometry).</li>
+            <li class="task-item"><strong>DOA & EDB Standard Grading:</strong> Automated RGB/HSV colorimetric analysis, pod diameter calculation, and batch-mode quality certification.</li>
+            <li class="task-item"><strong>Actionable Harvest-Scale Market Intelligence:</strong> Price forecasting aligned with the farmer’s specific harvest weight (1 kg, 5 kg, 50 kg+) and auction trends.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Research Gaps Identified -->
+      <div class="gap-container">
+        <h3 style="font-size: 1.6rem; margin-bottom: 1.5rem; text-align: center;">Identified Academic & Field Research Gaps</h3>
+        <div class="gap-grid">
+          <div class="gap-item">
+            <span class="gap-index">01</span>
+            <div>
+              <h4 style="font-size: 1.05rem; margin-bottom: 0.35rem; color: #fff;">Limited Local Disease Scope</h4>
+              <p style="font-size: 0.85rem;">Existing studies evaluate only 2 or 3 diseases under laboratory settings, completely overlooking chlorotic streak and vein clearing found in Sri Lankan highland climates.</p>
+            </div>
+          </div>
+          <div class="gap-item">
+            <span class="gap-index">02</span>
+            <div>
+              <h4 style="font-size: 1.05rem; margin-bottom: 0.35rem; color: #fff;">Controlled Datasets vs Real Plantations</h4>
+              <p style="font-size: 0.85rem;">Most prior vision models were tested on sterile lab datasets rather than field images captured with variable natural lighting, mist, and leaf moisture.</p>
+            </div>
+          </div>
+          <div class="gap-item">
+            <span class="gap-index">03</span>
+            <div>
+              <h4 style="font-size: 1.05rem; margin-bottom: 0.35rem; color: #fff;">Absence of Sri Lankan Pod Grading Standards</h4>
+              <p style="font-size: 0.85rem;">International research uses overseas criteria that do not correlate with Sri Lanka Department of Export Agriculture (DOA) and Export Development Board (EDB) grades.</p>
+            </div>
+          </div>
+          <div class="gap-item">
+            <span class="gap-index">04</span>
+            <div>
+              <h4 style="font-size: 1.05rem; margin-bottom: 0.35rem; color: #fff;">Manual Capsule Borer & Maturity Checking</h4>
+              <p style="font-size: 0.85rem;">Maturity identification is restricted to static color charts, while destructive capsule borer identification depends entirely on naked-eye field checks.</p>
+            </div>
+          </div>
+          <div class="gap-item">
+            <span class="gap-index">05</span>
+            <div>
+              <h4 style="font-size: 1.05rem; margin-bottom: 0.35rem; color: #fff;">Scarcity of Spice Market Predictive Models</h4>
+              <p style="font-size: 0.85rem;">While rice and tea enjoy extensive econometric modeling, cardamom farmers receive no harvest-quantity-based price forecast or selling advisory.</p>
+            </div>
+          </div>
+          <div class="gap-item">
+            <span class="gap-index">06</span>
+            <div>
+              <h4 style="font-size: 1.05rem; margin-bottom: 0.35rem; color: #fff;">Unintegrated Disconnected Tools</h4>
+              <p style="font-size: 0.85rem;">Existing tools fail to unify leaf pathology, harvest quality, and market economics into a single coherent farmer workflow.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Academic References & Literature Survey -->
+      <div style="margin-bottom: 4rem;">
+        <h3 style="font-size: 1.5rem; margin-bottom: 1.25rem;">Academic Literature Survey & Grounding</h3>
+        <div class="references-grid">
+          <div class="reference-card">
+            <div class="ref-tag">[1] U. Jayasinghe (HARTI - 2016)</div>
+            <p><strong>Cardamom Cultivation in Knuckles Conservation Forest:</strong> Documents 25–40% yield losses caused by pests, diseases, and environmental degradation in Sri Lankan highland cardamom plantations.</p>
+            <div class="ref-desc">Foundation for loss-reduction justification and central highland scope.</div>
+          </div>
+          <div class="reference-card">
+            <div class="ref-tag">[2] C.K. Sunil and C. D. Jaidhar (2021)</div>
+            <p><strong>Cardamom Plant Disease Detection Approach Using EfficientNetV2:</strong> Validates &gt;90% accuracy for image-based leaf disease detection, applicable to leaf blight and leaf spot.</p>
+            <div class="ref-desc">Baseline for deep convolutional architecture comparison in leaf pathology.</div>
+          </div>
+          <div class="reference-card">
+            <div class="ref-tag">[3] M. Murugan (2021)</div>
+            <p><strong>Effects of Cardamom Cultivation on Its Agroecosystem:</strong> Confirms humidity-driven pest outbreaks such as thrips and shoot borers, highlighting soil degradation in humid regions.</p>
+            <div class="ref-desc">Justifies capsule borer detection and automated spray advisories.</div>
+          </div>
+          <div class="reference-card">
+            <div class="ref-tag">[4] W. M. M. Weerakoon (2017)</div>
+            <p><strong>Impact of Cardamom Cultivation on Soil Seed Banks:</strong> Shows long-term biodiversity loss and decline in soil health caused by unsustainable cultivation practices in the Knuckles region.</p>
+            <div class="ref-desc">Highlights need for accurate diagnosis before chemical intervention.</div>
+          </div>
+          <div class="reference-card">
+            <div class="ref-tag">[5] Export Development Board Sri Lanka (EDB - 2019)</div>
+            <p><strong>Spices & Allied Products Sector Capability Report:</strong> Provides national cardamom production statistics (5,000–6,000 MT across 3,000 ha) and emphasizes export quality challenges.</p>
+            <div class="ref-desc">Standard reference for pod grading metrics and export market analysis.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Objective & 4 Sub-Objectives -->
+      <div>
+        <div class="objectives-main-banner">
+          <span class="badge badge-emerald" style="margin-bottom: 0.75rem;">Main Research Objective</span>
+          <h4>Integrated Machine Learning Decision Support System</h4>
+          <p style="color: #cbd5e1; max-width: 900px; margin: 0 auto; font-size: 1.05rem;">
+            "To design and implement an integrated machine learning–based intelligent decision support system that enhances cardamom farming and marketing by enabling early disease detection, objective quality grading, market prediction and analysis, and efficient pest infestation control, thereby improving productivity, export quality consistency, and farmer income."
+          </p>
+        </div>
+
+        <h3 style="font-size: 1.6rem; margin-bottom: 1.5rem; text-align: center;">Core Sub-Objectives & Novelty Contributions</h3>
+        <div class="sub-objectives-grid">
+          
+          <!-- Sub-Objective 1 -->
+          <div class="glass-card sub-obj-card">
+            <div class="sub-obj-header">
+              <div>
+                <span class="badge badge-emerald" style="margin-bottom: 0.4rem;">Sub-Objective 1</span>
+                <h4 class="sub-obj-title">Cardamom Leaf Disease Detection</h4>
+              </div>
+              <span class="member-owner-pill">K.J.M.D.Imasha (IT22097460)</span>
+            </div>
+            <p style="font-size: 0.88rem;">Computer vision pipeline identifying local foliar pathologies affecting highland cardamom crops.</p>
+            <div class="tasks-list">
+              <div class="task-item">Identify 5 local diseases: Leaf blight, leaf spot, mosaic disease, chlorotic streak, and vein clearing.</div>
+              <div class="task-item">Collect and curate field images from Kandy, Badulla, and Matale plantations.</div>
+              <div class="task-item">Ground-truth labeling supervised by retired Agriculture Department officials.</div>
+              <div class="task-item">Advanced preprocessing: adaptive resizing, noise elimination, and background cleaning.</div>
+            </div>
+            <div class="novelty-box">
+              <div class="novelty-title">Novelty Highlight</div>
+              <div class="novelty-text">Covers 5 Sri Lankan diseases (exceeding existing 2-disease literature), utilizes authentic highland plantation field imagery, and tailors detection to tropical high-humidity climates.</div>
+            </div>
+          </div>
+
+          <!-- Sub-Objective 2 -->
+          <div class="glass-card sub-obj-card">
+            <div class="sub-obj-header">
+              <div>
+                <span class="badge badge-amber" style="margin-bottom: 0.4rem;">Sub-Objective 2</span>
+                <h4 class="sub-obj-title">Smart Pod Monitoring & Caring System</h4>
+              </div>
+              <span class="member-owner-pill">Dissanayake K.S.S. (IT22223180)</span>
+            </div>
+            <p style="font-size: 0.88rem;">Dual-purpose computer vision framework combining harvest maturity analysis with pest damage inspection.</p>
+            <div class="tasks-list">
+              <div class="task-item">Multi-stage pod image collection across differing harvest and growth cycles.</div>
+              <div class="task-item">Visual feature extraction evaluating pod color, size, and geometry for harvest readiness.</div>
+              <div class="task-item">You Only Look Once (YOLO) deep learning architecture for locating subtle capsule borer entry holes.</div>
+              <div class="task-item">Validation and calibration against Sri Lanka Department of Export Agriculture (DOA) maturity standards.</div>
+            </div>
+            <div class="novelty-box">
+              <div class="novelty-title">Novelty Highlight</div>
+              <div class="novelty-text">Unifies pod maturity verification and capsule borer detection into a single model, locating microscopic pest apertures that farmers miss during manual inspection.</div>
+            </div>
+          </div>
+
+          <!-- Sub-Objective 3 -->
+          <div class="glass-card sub-obj-card">
+            <div class="sub-obj-header">
+              <div>
+                <span class="badge badge-blue" style="margin-bottom: 0.4rem;">Sub-Objective 3</span>
+                <h4 class="sub-obj-title">Market Prediction & Harvest Analysis</h4>
+              </div>
+              <span class="member-owner-pill">D.I.Delpechithra (IT22228758)</span>
+            </div>
+            <p style="font-size: 0.88rem;">Predictive econometric and harvest volume analytics for maximizing farmer sales revenue.</p>
+            <div class="tasks-list">
+              <div class="task-item">Curation of historical cardamom auction prices and seasonal highland production statistics.</div>
+              <div class="task-item">Harvest-quantity parameterization allowing farmers to query 1 kg, 5 kg, or large bulk batches.</div>
+              <div class="task-item">Time-series forecasting analyzing harvest timing, monsoon seasons, and export demand spikes.</div>
+              <div class="task-item">Farmer-tailored selling advisories recommending optimal holding versus selling windows.</div>
+            </div>
+            <div class="novelty-box">
+              <div class="novelty-title">Novelty Highlight</div>
+              <div class="novelty-text">Dedicated exclusively to Sri Lankan cardamom market dynamics. Replaces generic macro reports with personalized, harvest-volume-based selling decisions.</div>
+            </div>
+          </div>
+
+          <!-- Sub-Objective 4 -->
+          <div class="glass-card sub-obj-card">
+            <div class="sub-obj-header">
+              <div>
+                <span class="badge badge-purple" style="margin-bottom: 0.4rem;">Sub-Objective 4</span>
+                <h4 class="sub-obj-title">Cardamom Pod Quality Grading</h4>
+              </div>
+              <span class="member-owner-pill">Kulasooriya K.S.D (IT22158840)</span>
+            </div>
+            <p style="font-size: 0.88rem;">Objective multi-parameter vision grading and defect localization adhering to export standards.</p>
+            <div class="tasks-list">
+              <div class="task-item">Colorimetric extraction using RGB and HSV color spaces (green, yellowish, brown drying phases).</div>
+              <div class="task-item">Dimensional geometric measurement calculating length, diameter, and shape uniformity.</div>
+              <div class="task-item">YOLOv10 / YOLOv8 object detection localizing surface defects: thrips scars, splits, abrasions.</div>
+              <div class="task-item">Batch Mode implementation producing percentage-based grade distributions for multi-pod frames.</div>
+            </div>
+            <div class="novelty-box">
+              <div class="novelty-title">Novelty Highlight</div>
+              <div class="novelty-text">Employs YOLOv10 object detection and maps pod features directly into official Sri Lanka DOA and Export Development Board (EDB) grades, eliminating human inspection bias.</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       METHODOLOGY & SYSTEM ARCHITECTURE (100% PURE CSS TABS)
+       ========================================================================== -->
+  <section class="methodology-section" id="methodology">
+    <div class="container">
+      <div class="center-text">
+        <div class="section-tag">Engineering Process</div>
+        <h2 class="section-title">Methodology & System Architecture</h2>
+        <p class="section-subtitle">
+          From plantation ground-truthing to edge inference: a rigorous 4-phase research methodology delivering production-grade machine learning.
+        </p>
+      </div>
+
+      <!-- 4 Phases of Research Workflow -->
+      <div class="phases-grid">
+        <div class="glass-card phase-card">
+          <div class="phase-step-badge">1</div>
+          <h4>Phase 1: Field Data Collection & Domain Validation</h4>
+          <p>
+            Field expeditions across Kandy, Badulla, and Matale cardamom plantations. Supervised ground-truth labeling by retired Agriculture Department officer <strong>Mrs. Pavithra Seniwirathna</strong> and integration of historical DOA archives.
+          </p>
+        </div>
+
+        <div class="glass-card phase-card">
+          <div class="phase-step-badge">2</div>
+          <h4>Phase 2: Preprocessing & Vision Model Training</h4>
+          <p>
+            Dataset augmentation, illumination normalization, and training state-of-the-art vision models: <strong>YOLOv10, YOLOv8, and EfficientNetV2</strong> with transfer learning for leaf pathology and pod grading.
+          </p>
+        </div>
+
+        <div class="glass-card phase-card">
+          <div class="phase-step-badge">3</div>
+          <h4>Phase 3: System Integration & Mobile Pipeline</h4>
+          <p>
+            Designing a farmer-friendly mobile client backed by a lightweight RESTful inference engine. Integrating leaf diagnostics, pod defect analysis, and market forecast algorithms into a single unified schema.
+          </p>
+        </div>
+
+        <div class="glass-card phase-card">
+          <div class="phase-step-badge">4</div>
+          <h4>Phase 4: Field Testing & Farmer Cooperative Trials</h4>
+          <p>
+            Field validation in collaboration with HARTI-linked agricultural cooperatives. Benchmarking accuracy against agricultural officer diagnoses, testing low-light conditions, and gathering System Usability Scale (SUS) metrics.
+          </p>
+        </div>
+      </div>
+
+      <!-- Interactive Conceptual Flowchart (Visualizing Assessment Page 4 Diagram) -->
+      <div class="flowchart-wrapper">
+        <div class="flowchart-header">
+          <span class="badge badge-emerald" style="margin-bottom: 0.5rem;">System Blueprint</span>
+          <h3 style="font-size: 1.85rem; color: #ffffff;">Conceptual System Workflow Diagram</h3>
+          <p style="color: var(--text-secondary); max-width: 680px; margin: 0 auto; font-size: 0.95rem;">
+            Faithfully illustrating the data ingestion, ML processing nodes, algorithmic inference, central database synchronization, and farmer decision output.
+          </p>
+        </div>
+
+        <div class="flowchart-diagram">
+          <!-- 4 Core Parallel Processing Modules -->
+          <div class="pipeline-modules-grid">
+            <div class="pipeline-node">
+              <div class="node-icon-wrapper" style="background: rgba(16, 185, 129, 0.2); color: var(--emerald-400);">🌿</div>
+              <div class="node-title">Leaf Disease Detection</div>
+              <div class="node-action">Detect → Process → Classify</div>
+              <p style="font-size: 0.78rem; color: var(--text-secondary); margin-top: 0.5rem;">5 Highland leaf diseases classified via CNN/EfficientNet</p>
+            </div>
+
+            <div class="pipeline-node">
+              <div class="node-icon-wrapper" style="background: rgba(245, 158, 11, 0.2); color: #fbbf24;">🔍</div>
+              <div class="node-title">Pod Monitoring System</div>
+              <div class="node-action">Monitor → YOLO → Identify</div>
+              <p style="font-size: 0.78rem; color: var(--text-secondary); margin-top: 0.5rem;">Maturity verification & capsule borer puncture localization</p>
+            </div>
+
+            <div class="pipeline-node">
+              <div class="node-icon-wrapper" style="background: rgba(59, 130, 246, 0.2); color: #60a5fa;">📊</div>
+              <div class="node-title">Market Prediction</div>
+              <div class="node-action">Collect → Process → Forecast</div>
+              <p style="font-size: 0.78rem; color: var(--text-secondary); margin-top: 0.5rem;">Historical auction & seasonal harvest volume analysis</p>
+            </div>
+
+            <div class="pipeline-node">
+              <div class="node-icon-wrapper" style="background: rgba(168, 85, 247, 0.2); color: #c084fc;">🏷️</div>
+              <div class="node-title">Quality Grading</div>
+              <div class="node-action">Scan → Measure → Grade</div>
+              <p style="font-size: 0.78rem; color: var(--text-secondary); margin-top: 0.5rem;">RGB/HSV colorimetry, pod diameter, & batch percentages</p>
+            </div>
+          </div>
+
+          <!-- Decision Gateways -->
+          <div class="flowchart-decision-row">
+            <div class="flow-decision-card">
+              <span style="color: var(--emerald-400); font-weight: 700; display: block; margin-bottom: 0.25rem;">Diagnostic Branching</span>
+              <span>Disease or Pest Detected? → Generates immediate agrochemical-free or guided mitigation recommendation</span>
+            </div>
+            <div class="flow-decision-card">
+              <span style="color: #60a5fa; font-weight: 700; display: block; margin-bottom: 0.25rem;">Quality & Market Branching</span>
+              <span>Grading & Market Analytics? → Feeds batch quality metrics and volume parameters for dynamic valuation</span>
+            </div>
+          </div>
+
+          <!-- Central Data Engine & Final Farmer Advice Output -->
+          <div class="flowchart-hub-row">
+            <div class="central-db-node">
+              <div style="font-size: 2rem; margin-bottom: 0.5rem;">🗄️</div>
+              <h4 style="font-size: 1.15rem; color: #ffffff; margin-bottom: 0.25rem;">Central Data Repository</h4>
+              <p style="font-size: 0.8rem; color: var(--text-secondary);">Historical plantation scans, seasonal disease incidence, auction price indices, and farmer feedback logs</p>
+            </div>
+
+            <div class="farmer-report-node">
+              <div style="font-size: 2rem; margin-bottom: 0.5rem;">📱</div>
+              <h4 style="font-size: 1.15rem; color: #ffffff; margin-bottom: 0.25rem;">Cardamo Farmer Report</h4>
+              <p style="font-size: 0.8rem; color: var(--text-secondary);">Instant actionable advisories, treatment dosage guidelines, certified grade certificates, and optimal sale timings</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pure CSS Radio Tabs System for Module Details -->
+      <div class="css-tabs-wrapper">
+        <h3 style="font-size: 1.6rem; text-align: center; margin-bottom: 1.5rem;">Detailed Module Specifications</h3>
+        
+        <!-- Radio Buttons -->
+        <input type="radio" name="module-tab" id="tab-leaf" class="tab-radio" checked>
+        <input type="radio" name="module-tab" id="tab-pod" class="tab-radio">
+        <input type="radio" name="module-tab" id="tab-market" class="tab-radio">
+        <input type="radio" name="module-tab" id="tab-grading" class="tab-radio">
+
+        <!-- Labels Bar (Clickable) -->
+        <div class="tab-labels-bar">
+          <label for="tab-leaf" class="tab-label label-leaf">01. Leaf Disease Vision</label>
+          <label for="tab-pod" class="tab-label label-pod">02. Smart Pod & Borer</label>
+          <label for="tab-market" class="tab-label label-market">03. Market Forecasting</label>
+          <label for="tab-grading" class="tab-label label-grading">04. Pod Quality Grading</label>
+        </div>
+
+        <!-- Panes (Controlled purely by CSS :checked selectors) -->
+        <div class="tab-panes">
+          
+          <!-- Pane 1: Leaf Disease -->
+          <div class="tab-content pane-leaf">
+            <div class="module-detail-card">
+              <div class="module-detail-specs">
+                <h4>Module 1: Cardamom Leaf Disease Detection</h4>
+                <div class="lead-researcher-tag">
+                  <span>Researcher: <strong>K.J.M.D.Imasha</strong></span>
+                  <span>•</span>
+                  <span>Reg: <strong>IT22097460</strong></span>
+                </div>
+                <div class="module-features-list">
+                  <div class="module-feature-item">
+                    <span class="check-bullet">✓</span>
+                    <span><strong>Multi-Class Foliar Recognition:</strong> Distinguishes Leaf Blight, Leaf Spot, Mosaic Disease, Chlorotic Streak, and Vein Clearing from healthy cardamom foliage.</span>
+                  </div>
+                  <div class="module-feature-item">
+                    <span class="check-bullet">✓</span>
+                    <span><strong>Robust Natural Augmentation:</strong> Trained with contrast normalization to withstand tropical mist, raindrops, and shadows in high-elevation farms.</span>
+                  </div>
+                  <div class="module-feature-item">
+                    <span class="check-bullet">✓</span>
+                    <span><strong>Early Intervention Trigger:</strong> Flags early-stage chlorotic spots before irreversible canopy infestation spreads across the farm.</span>
+                  </div>
+                </div>
+                <div class="module-tech-chips">
+                  <span class="tech-chip">EfficientNetV2</span>
+                  <span class="tech-chip">PyTorch</span>
+                  <span class="tech-chip">OpenCV</span>
+                  <span class="tech-chip">Adaptive Histogram Equalization</span>
+                </div>
+              </div>
+              <div class="module-preview-box">
+                <h5 style="color: #fff; margin-bottom: 0.5rem; font-size: 1rem;">Pathology Scope</h5>
+                <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6;">
+                  Focused strictly on diseases confirmed in Sri Lanka’s agro-ecological zones (WU1, WU2, WM1) across Knuckles, Badulla, and Matale.
+                </p>
+                <div class="dataset-stat-box">
+                  <h5>Expert Labeling</h5>
+                  <p>Validated with the direct guidance of Mrs. Pavithra Seniwirathna (Retired Agriculture Department Officer).</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pane 2: Pod Monitoring -->
+          <div class="tab-content pane-pod">
+            <div class="module-detail-card">
+              <div class="module-detail-specs">
+                <h4>Module 2: Smart Pod Monitoring & Caring System</h4>
+                <div class="lead-researcher-tag">
+                  <span>Researcher: <strong>Dissanayake K.S.S.</strong></span>
+                  <span>•</span>
+                  <span>Reg: <strong>IT22223180</strong></span>
+                </div>
+                <div class="module-features-list">
+                  <div class="module-feature-item">
+                    <span class="check-bullet">✓</span>
+                    <span><strong>Dual-Stream Vision Architecture:</strong> Simultaneously calculates pod harvesting readiness while running high-sensitivity defect bounding boxes.</span>
+                  </div>
+                  <div class="module-feature-item">
+                    <span class="check-bullet">✓</span>
+                    <span><strong>Capsule Borer Localization:</strong> Locates sub-millimeter borer entry points and surface necrotic scarring utilizing real-time YOLO detectors.</span>
+                  </div>
+                  <div class="module-feature-item">
+                    <span class="check-bullet">✓</span>
+                    <span><strong>Harvest Timing Advisory:</strong> Prevents premature green picking which accounts for up to 30% loss of dry weight and volatile oil potency.</span>
+                  </div>
+                </div>
+                <div class="module-tech-chips">
+                  <span class="tech-chip">YOLOv8</span>
+                  <span class="tech-chip">DOA Maturity Matrix</span>
+                  <span class="tech-chip">TensorFlow Lite</span>
+                  <span class="tech-chip">Edge Inference</span>
+                </div>
+              </div>
+              <div class="module-preview-box">
+                <h5 style="color: #fff; margin-bottom: 0.5rem; font-size: 1rem;">Capsule Borer Defense</h5>
+                <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6;">
+                  Capsule borer infestation is the leading entomological reason for export rejection. Instant mobile pin-pointing stops infested lots from ruining clean crates.
+                </p>
+                <div class="dataset-stat-box">
+                  <h5>Maturity Verification</h5>
+                  <p>Calibrated against the Department of Export Agriculture maturity index (capsule firmness, ribbed curvature, seed coloration).</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pane 3: Market Prediction -->
+          <div class="tab-content pane-market">
+            <div class="module-detail-card">
+              <div class="module-detail-specs">
+                <h4>Module 3: Market Prediction & Harvest Analysis</h4>
+                <div class="lead-researcher-tag">
+                  <span>Researcher: <strong>D.I.Delpechithra</strong></span>
+                  <span>•</span>
+                  <span>Reg: <strong>IT22228758</strong></span>
+                </div>
+                <div class="module-features-list">
+                  <div class="module-feature-item">
+                    <span class="check-bullet">✓</span>
+                    <span><strong>Quantity-Parameterized Pricing:</strong> Farmers specify intended harvest quantities (1 kg, 5 kg, 50 kg) to obtain custom expected revenue brackets.</span>
+                  </div>
+                  <div class="module-feature-item">
+                    <span class="check-bullet">✓</span>
+                    <span><strong>Export Demand & Auction Analytics:</strong> Integrates seasonal auction patterns, highland crop flush cycles, and international spice trade shifts.</span>
+                  </div>
+                  <div class="module-feature-item">
+                    <span class="check-bullet">✓</span>
+                    <span><strong>Strategic Selling Timing:</strong> Formulates actionable holding recommendations during seasonal price troughs to protect farming households.</span>
+                  </div>
+                </div>
+                <div class="module-tech-chips">
+                  <span class="tech-chip">Time-Series ML</span>
+                  <span class="tech-chip">Scikit-Learn</span>
+                  <span class="tech-chip">Pandas</span>
+                  <span class="tech-chip">Sri Lanka Auction Indices</span>
+                </div>
+              </div>
+              <div class="module-preview-box">
+                <h5 style="color: #fff; margin-bottom: 0.5rem; font-size: 1rem;">Farmer Revenue Focus</h5>
+                <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6;">
+                  Eliminates information asymmetry where middlemen exploit rural farmers who lack transparency regarding weekly Colombo auction price trends.
+                </p>
+                <div class="dataset-stat-box">
+                  <h5>Historical Time Series</h5>
+                  <p>Curated from Sri Lanka Export Development Board historical pricing records and agricultural department trade registers.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pane 4: Quality Grading -->
+          <div class="tab-content pane-grading">
+            <div class="module-detail-card">
+              <div class="module-detail-specs">
+                <h4>Module 4: Cardamom Pod Quality Grading</h4>
+                <div class="lead-researcher-tag">
+                  <span>Researcher: <strong>Kulasooriya K.S.D</strong></span>
+                  <span>•</span>
+                  <span>Reg: <strong>IT22158840</strong></span>
+                </div>
+                <div class="module-features-list">
+                  <div class="module-feature-item">
+                    <span class="check-bullet">✓</span>
+                    <span><strong>RGB & HSV Colorimetry:</strong> Quantifies deep green, pale green, yellowish, and brownish pods with pixel-level color segmentation.</span>
+                  </div>
+                  <div class="module-feature-item">
+                    <span class="check-bullet">✓</span>
+                    <span><strong>Geometric Calibration:</strong> Calculates pod length, transverse diameter, and aspect ratio to separate Grade 1 bold pods from smaller capsules.</span>
+                  </div>
+                  <div class="module-feature-item">
+                    <span class="check-bullet">✓</span>
+                    <span><strong>YOLOv10 Surface Defect Detection:</strong> Identifies thrips scars, epidermal splits, and mechanical bruises.</span>
+                  </div>
+                  <div class="module-feature-item">
+                    <span class="check-bullet">✓</span>
+                    <span><strong>Multi-Pod Batch Mode:</strong> Delivers full batch quality breakdown percentages from a single photograph of spread pods.</span>
+                  </div>
+                </div>
+                <div class="module-tech-chips">
+                  <span class="tech-chip">YOLOv10</span>
+                  <span class="tech-chip">HSV Color Space</span>
+                  <span class="tech-chip">DOA & EDB Standards</span>
+                  <span class="tech-chip">OpenCV Contours</span>
+                </div>
+              </div>
+              <div class="module-preview-box">
+                <h5 style="color: #fff; margin-bottom: 0.5rem; font-size: 1rem;">Export Grade Alignment</h5>
+                <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6;">
+                  Enforces the official Sri Lanka standards: Ceylon Cardamom Green (Special/Regular) based on capsule diameter (&gt;7mm, 6-7mm) and defect allowances.
+                </p>
+                <div class="dataset-stat-box">
+                  <h5>Object Detection Novelty</h5>
+                  <p>Utilizes ultra-efficient YOLOv10 object detection to replace manual sorting and ensure high framerate performance on budget devices.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       TECHNOLOGY STACK SECTION
+       ========================================================================== -->
+  <section class="tech-section" id="technologies">
+    <div class="container">
+      <div class="center-text">
+        <div class="section-tag">Modern Engineering Stack</div>
+        <h2 class="section-title">Technologies & Frameworks</h2>
+        <p class="section-subtitle">
+          Curated selection of state-of-the-art machine learning, computer vision, data analytics, and mobile interfaces powering Cardamo.
+        </p>
+      </div>
+
+      <div class="tech-categories-grid">
+        
+        <!-- Category 1 -->
+        <div class="glass-card tech-category-card">
+          <h4>
+            <span style="color: var(--emerald-400);">🤖</span>
+            <span>Computer Vision & Deep Learning</span>
+          </h4>
+          <div class="tech-items-list">
+            <div class="tech-item">
+              <span class="tech-item-dot"></span>
+              <div class="tech-item-info">
+                <span class="tech-name">YOLOv10 & YOLOv8</span>
+                <span class="tech-purpose">Real-time object detection for capsule borer punctures and surface abrasions</span>
+              </div>
+            </div>
+            <div class="tech-item">
+              <span class="tech-item-dot"></span>
+              <div class="tech-item-info">
+                <span class="tech-name">EfficientNetV2</span>
+                <span class="tech-purpose">High-accuracy transfer learning for 5-class foliar pathology recognition</span>
+              </div>
+            </div>
+            <div class="tech-item">
+              <span class="tech-item-dot"></span>
+              <div class="tech-item-info">
+                <span class="tech-name">OpenCV</span>
+                <span class="tech-purpose">Edge detection, contour extraction, background subtraction, and dimensional scaling</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 2 -->
+        <div class="glass-card tech-category-card">
+          <h4>
+            <span style="color: #60a5fa;">🧠</span>
+            <span>Machine Learning & Core AI</span>
+          </h4>
+          <div class="tech-items-list">
+            <div class="tech-item">
+              <span class="tech-item-dot" style="background:#60a5fa;"></span>
+              <div class="tech-item-info">
+                <span class="tech-name">Python 3.10+</span>
+                <span class="tech-purpose">Primary runtime language for dataset processing, model training, and API services</span>
+              </div>
+            </div>
+            <div class="tech-item">
+              <span class="tech-item-dot" style="background:#60a5fa;"></span>
+              <div class="tech-item-info">
+                <span class="tech-name">PyTorch & TensorFlow</span>
+                <span class="tech-purpose">Deep neural network modeling, weights fine-tuning, and export pipelines</span>
+              </div>
+            </div>
+            <div class="tech-item">
+              <span class="tech-item-dot" style="background:#60a5fa;"></span>
+              <div class="tech-item-info">
+                <span class="tech-name">Scikit-Learn</span>
+                <span class="tech-purpose">Regression models, decision trees, and time-series feature engineering for market trends</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 3 -->
+        <div class="glass-card tech-category-card">
+          <h4>
+            <span style="color: #fbbf24;">🎨</span>
+            <span>Colorimetry & Image Analysis</span>
+          </h4>
+          <div class="tech-items-list">
+            <div class="tech-item">
+              <span class="tech-item-dot" style="background:#fbbf24;"></span>
+              <div class="tech-item-info">
+                <span class="tech-name">RGB & HSV Color Spaces</span>
+                <span class="tech-purpose">Hue-Saturation-Value thresholding to objectively evaluate pod greenness</span>
+              </div>
+            </div>
+            <div class="tech-item">
+              <span class="tech-item-dot" style="background:#fbbf24;"></span>
+              <div class="tech-item-info">
+                <span class="tech-name">NumPy & Pandas</span>
+                <span class="tech-purpose">High-performance matrix manipulations and tabular market time-series analytics</span>
+              </div>
+            </div>
+            <div class="tech-item">
+              <span class="tech-item-dot" style="background:#fbbf24;"></span>
+              <div class="tech-item-info">
+                <span class="tech-name">Albumentations</span>
+                <span class="tech-purpose">Agricultural image augmentations (rain, blur, glare, and rotation variations)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 4 -->
+        <div class="glass-card tech-category-card">
+          <h4>
+            <span style="color: #c084fc;">📱</span>
+            <span>Mobile & Web Platform</span>
+          </h4>
+          <div class="tech-items-list">
+            <div class="tech-item">
+              <span class="tech-item-dot" style="background:#c084fc;"></span>
+              <div class="tech-item-info">
+                <span class="tech-name">Mobile Client Architecture</span>
+                <span class="tech-purpose">Lightweight, high-contrast farmer-centric interface built for outdoor visibility</span>
+              </div>
+            </div>
+            <div class="tech-item">
+              <span class="tech-item-dot" style="background:#c084fc;"></span>
+              <div class="tech-item-info">
+                <span class="tech-name">Pure HTML5 & Modern CSS3</span>
+                <span class="tech-purpose">100% pure HTML and CSS showcase portal adhering strictly to academic instructions</span>
+              </div>
+            </div>
+            <div class="tech-item">
+              <span class="tech-item-dot" style="background:#c084fc;"></span>
+              <div class="tech-item-info">
+                <span class="tech-name">RESTful APIs</span>
+                <span class="tech-purpose">Lightweight HTTP communication between mobile client and backend ML server</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 5 -->
+        <div class="glass-card tech-category-card">
+          <h4>
+            <span style="color: #34d399;">📜</span>
+            <span>Agricultural Standards & Domain Knowledge</span>
+          </h4>
+          <div class="tech-items-list">
+            <div class="tech-item">
+              <span class="tech-item-dot" style="background:#34d399;"></span>
+              <div class="tech-item-info">
+                <span class="tech-name">Department of Export Agriculture (DOA)</span>
+                <span class="tech-purpose">Official pod maturity indices, leaf symptom charts, and inspection guides</span>
+              </div>
+            </div>
+            <div class="tech-item">
+              <span class="tech-item-dot" style="background:#34d399;"></span>
+              <div class="tech-item-info">
+                <span class="tech-name">Export Development Board (EDB)</span>
+                <span class="tech-purpose">Ceylon Cardamom export grading classifications, pod diameter tolerances, and market metrics</span>
+              </div>
+            </div>
+            <div class="tech-item">
+              <span class="tech-item-dot" style="background:#34d399;"></span>
+              <div class="tech-item-info">
+                <span class="tech-name">HARTI Knuckles Research</span>
+                <span class="tech-purpose">Historical highland plantation baseline survey on yield losses and socio-economics</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 6 -->
+        <div class="glass-card tech-category-card">
+          <h4>
+            <span style="color: #f43f5e;">⚡</span>
+            <span>Infrastructure & Version Control</span>
+          </h4>
+          <div class="tech-items-list">
+            <div class="tech-item">
+              <span class="tech-item-dot" style="background:#f43f5e;"></span>
+              <div class="tech-item-info">
+                <span class="tech-name">Git & GitHub</span>
+                <span class="tech-purpose">Collaborative source control, versioning, and continuous milestone tracking</span>
+              </div>
+            </div>
+            <div class="tech-item">
+              <span class="tech-item-dot" style="background:#f43f5e;"></span>
+              <div class="tech-item-info">
+                <span class="tech-name">SQLite & Cloud Database</span>
+                <span class="tech-purpose">Highland farm historical logs, seasonal disease incidence, and market records</span>
+              </div>
+            </div>
+            <div class="tech-item">
+              <span class="tech-item-dot" style="background:#f43f5e;"></span>
+              <div class="tech-item-info">
+                <span class="tech-name">Google Colab & GPU Compute</span>
+                <span class="tech-purpose">High-throughput model training, hyperparameter optimization, and validation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PROJECT MILESTONES & TIMELINE
+       ========================================================================== -->
+  <section class="milestones-section" id="milestones">
+    <div class="container">
+      <div class="center-text">
+        <div class="section-tag">Academic Trajectory</div>
+        <h2 class="section-title">Research Milestones & Progress</h2>
+        <p class="section-subtitle">
+          Timeline of the SLIIT IT4010 Research Project (2026 Jan Batch), tracking evaluation checkpoints from topic assessment to viva defense.
+        </p>
+      </div>
+
+      <div class="timeline-track">
+        
+        <!-- Milestone 1 -->
+        <div class="timeline-step completed">
+          <div class="timeline-marker">01</div>
+          <div class="timeline-body">
+            <div class="timeline-meta">
+              <h4 class="timeline-title">Topic Assessment Form Submission</h4>
+              <span class="timeline-date">January 2026</span>
+            </div>
+            <p class="timeline-desc">
+              Formal submission and evaluation of project scope, problem statement, research gap, literature citations, and 4 individual sub-objectives. 
+              <strong>Officially Approved with minor changes</strong> by Supervisor Ms. Jenny Krishara and Co-Supervisor Dr. Dinuka Wijendra.
+            </p>
+            <div class="deliverables-pills">
+              <span class="deliv-pill">Topic Assessment Form V2.1</span>
+              <span class="deliv-pill">Status: Approved</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Milestone 2 -->
+        <div class="timeline-step completed">
+          <div class="timeline-marker">02</div>
+          <div class="timeline-body">
+            <div class="timeline-meta">
+              <h4 class="timeline-title">Project Proposal & Charter</h4>
+              <span class="timeline-date">February 2026</span>
+            </div>
+            <p class="timeline-desc">
+              Comprehensive project proposal defense detailing system requirements, data acquisition protocols with HARTI & DOA, algorithmic selection (YOLO, EfficientNet), and risk mitigation plans.
+            </p>
+            <div class="deliverables-pills">
+              <span class="deliv-pill">Project Charter</span>
+              <span class="deliv-pill">Proposal Document</span>
+              <span class="deliv-pill">Oral Defense</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Milestone 3 -->
+        <div class="timeline-step current">
+          <div class="timeline-marker">03</div>
+          <div class="timeline-body">
+            <div class="timeline-meta">
+              <h4 class="timeline-title">Website Assessment & Digital Showcase</h4>
+              <span class="timeline-date">Current Milestone</span>
+            </div>
+            <p class="timeline-desc">
+              Deployment and assessment of the dedicated academic showcase website built with 100% pure HTML and CSS. Showcasing project scope, component methodology, dataset curation, team structure, and downloadable documentation.
+            </p>
+            <div class="deliverables-pills">
+              <span class="deliv-pill">Showcase Web Portal</span>
+              <span class="deliv-pill">Pure HTML/CSS Built</span>
+              <span class="deliv-pill">Document Repository</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Milestone 4 -->
+        <div class="timeline-step upcoming">
+          <div class="timeline-marker">04</div>
+          <div class="timeline-body">
+            <div class="timeline-meta">
+              <h4 class="timeline-title">Progress Presentation I</h4>
+              <span class="timeline-date">Upcoming Checkpoint</span>
+            </div>
+            <p class="timeline-desc">
+              First formal progress evaluation presenting 50% technical implementation: leaf disease image dataset preprocessing, initial CNN training benchmarks, and exploratory market dataset synthesis.
+            </p>
+            <div class="deliverables-pills">
+              <span class="deliv-pill">Progress Report I</span>
+              <span class="deliv-pill">Prototype Demonstration</span>
+              <span class="deliv-pill">Dataset Audit</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Milestone 5 -->
+        <div class="timeline-step upcoming">
+          <div class="timeline-marker">05</div>
+          <div class="timeline-body">
+            <div class="timeline-meta">
+              <h4 class="timeline-title">Academic Research Paper Submission</h4>
+              <span class="timeline-date">Upcoming Checkpoint</span>
+            </div>
+            <p class="timeline-desc">
+              Manuscript drafting in IEEE format documenting the novel machine learning architectures, highland cardamom dataset collection, experimental accuracy benchmarks, and comparative novelty against prior work.
+            </p>
+            <div class="deliverables-pills">
+              <span class="deliv-pill">IEEE Manuscript Draft</span>
+              <span class="deliv-pill">Empirical Results</span>
+              <span class="deliv-pill">Peer Review Preparation</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Milestone 6 -->
+        <div class="timeline-step upcoming">
+          <div class="timeline-marker">06</div>
+          <div class="timeline-body">
+            <div class="timeline-meta">
+              <h4 class="timeline-title">Progress Presentation II & System Demo</h4>
+              <span class="timeline-date">Upcoming Checkpoint</span>
+            </div>
+            <p class="timeline-desc">
+              Demonstration of 90% completed integrated mobile application, real-time YOLO pod grading performance, batch quality reporting, and market forecast accuracy metrics under simulated conditions.
+            </p>
+            <div class="deliverables-pills">
+              <span class="deliv-pill">Full System Demo</span>
+              <span class="deliv-pill">Testing & Usability Logs</span>
+              <span class="deliv-pill">Progress Report II</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Milestone 7 -->
+        <div class="timeline-step upcoming">
+          <div class="timeline-marker">07</div>
+          <div class="timeline-body">
+            <div class="timeline-meta">
+              <h4 class="timeline-title">Final Project Report, Website & Viva Voce</h4>
+              <span class="timeline-date">Final Defense</span>
+            </div>
+            <p class="timeline-desc">
+              Comprehensive individual and group dissertation submission covering end-to-end development, ethical clearance, cooperative field trials, future research directions, and final viva examination defense.
+            </p>
+            <div class="deliverables-pills">
+              <span class="deliv-pill">Final Dissertation</span>
+              <span class="deliv-pill">Viva Defense</span>
+              <span class="deliv-pill">Project Logbook</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       DOWNLOADS & DELIVERABLES (PURE HTML & CSS)
+       ========================================================================== -->
+  <section class="downloads-section" id="downloads">
+    <div class="container">
+      <div class="center-text">
+        <div class="section-tag">Project Deliverables</div>
+        <h2 class="section-title">Documents & Downloads</h2>
+        <p class="section-subtitle">
+          Directly download approved assessment forms, academic research papers, project reports, and presentation slide decks.
+        </p>
+      </div>
+
+      <!-- Category 1: Academic & Project Documents -->
+      <div class="downloads-category-group">
+        <div class="downloads-category-header">
+          <span style="font-size: 1.5rem;">📄</span>
+          <h3>Academic & Project Documents</h3>
+        </div>
+
+        <div class="downloads-grid">
+          
+          <!-- Doc 1: Topic Assessment -->
+          <div class="download-card">
+            <div class="download-card-top">
+              <div class="download-type-bar">
+                <span class="doc-badge doc-badge-pdf">PDF Document</span>
+                <span class="badge badge-emerald">Available</span>
+              </div>
+              <h4 class="download-title">Topic Assessment Form V2.1</h4>
+              <p class="download-desc">
+                Official signed SLIIT IT4010 Topic Assessment Form detailing research problem, literature citations, 4 sub-objectives, and signatures from Ms. Jenny Krishara and Dr. Dinuka Wijendra.
+              </p>
+            </div>
+            <div class="download-card-bottom">
+              <span class="download-date">January 2026 • 10 Pages</span>
+              <div class="download-actions">
+                <a href="assets/docs/topic-assessment.pdf" download="Cardamo_Topic_Assessment.pdf" class="btn btn-primary btn-sm">Download PDF</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Doc 2: Research Paper Draft -->
+          <div class="download-card">
+            <div class="download-card-top">
+              <div class="download-type-bar">
+                <span class="doc-badge doc-badge-pdf">PDF Document</span>
+                <span class="badge badge-emerald">Available</span>
+              </div>
+              <h4 class="download-title">Academic Research Paper Draft</h4>
+              <p class="download-desc">
+                Full academic research paper manuscript documenting the ML-driven cardamom cultivation management system, vision modeling, experimental metrics, and highland field validation findings.
+              </p>
+            </div>
+            <div class="download-card-bottom">
+              <span class="download-date">2026 • IEEE Format</span>
+              <div class="download-actions">
+                <a href="assets/docs/cardamo-research-paper.pdf" download="Cardamo_Research_Paper.pdf" class="btn btn-primary btn-sm">Download PDF</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Doc 3: Project Proposal -->
+          <div class="download-card">
+            <div class="download-card-top">
+              <div class="download-type-bar">
+                <span class="doc-badge doc-badge-pdf">PDF Document</span>
+                <span class="badge badge-amber">Under Review</span>
+              </div>
+              <h4 class="download-title">Project Proposal Document</h4>
+              <p class="download-desc">
+                Comprehensive project proposal report defining system specifications, requirements analysis, component architectures, and cooperative field evaluation schedule.
+              </p>
+            </div>
+            <div class="download-card-bottom">
+              <span class="download-date">February 2026 • Group Report</span>
+              <div class="download-actions">
+                <span class="badge badge-amber">Scheduled</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Doc 4: Final Dissertation -->
+          <div class="download-card">
+            <div class="download-card-top">
+              <div class="download-type-bar">
+                <span class="doc-badge doc-badge-pdf">PDF Document</span>
+                <span class="badge badge-blue">Upcoming</span>
+              </div>
+              <h4 class="download-title">Final Project Dissertation</h4>
+              <p class="download-desc">
+                The comprehensive final project thesis covering individual chapters, field trials, statistical models, ethical approvals, and conclusions for the spice export industry.
+              </p>
+            </div>
+            <div class="download-card-bottom">
+              <span class="download-date">Upcoming • SLIIT IT4010</span>
+              <div class="download-actions">
+                <span class="badge badge-blue">Scheduled</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Category 2: Presentation Decks -->
+      <div class="downloads-category-group">
+        <div class="downloads-category-header">
+          <span style="font-size: 1.5rem;">📊</span>
+          <h3>Presentation Slide Decks</h3>
+        </div>
+
+        <div class="downloads-grid">
+          
+          <!-- Pres 1: Proposal Presentation -->
+          <div class="download-card">
+            <div class="download-card-top">
+              <div class="download-type-bar">
+                <span class="doc-badge doc-badge-slides">Slide Deck</span>
+                <span class="badge badge-emerald">Delivered</span>
+              </div>
+              <h4 class="download-title">Project Proposal Presentation Deck</h4>
+              <p class="download-desc">
+                Initial presentation slide deck delivered to the faculty academic evaluation panel highlighting motivation, problem statements, algorithmic choices, and timelines.
+              </p>
+            </div>
+            <div class="download-card-bottom">
+              <span class="download-date">February 2026 • Proposal Stage</span>
+              <div class="download-actions">
+                <span class="badge badge-emerald">Completed</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pres 2: Progress Presentation I -->
+          <div class="download-card">
+            <div class="download-card-top">
+              <div class="download-type-bar">
+                <span class="doc-badge doc-badge-slides">Slide Deck</span>
+                <span class="badge badge-amber">In Preparation</span>
+              </div>
+              <h4 class="download-title">Progress Presentation I Deck</h4>
+              <p class="download-desc">
+                Midway evaluation slides presenting field dataset curation across Kandy and Badulla, data labeling, model training losses, and preliminary diagnostic accuracy.
+              </p>
+            </div>
+            <div class="download-card-bottom">
+              <span class="download-date">Upcoming • Progress Stage</span>
+              <div class="download-actions">
+                <span class="badge badge-amber">Scheduled</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pres 3: Final Presentation -->
+          <div class="download-card">
+            <div class="download-card-top">
+              <div class="download-type-bar">
+                <span class="doc-badge doc-badge-slides">Slide Deck</span>
+                <span class="badge badge-blue">Scheduled</span>
+              </div>
+              <h4 class="download-title">Final Project Presentation & Viva Deck</h4>
+              <p class="download-desc">
+                The comprehensive final evaluation presentation demonstrating full production system workflows, live mobile detection, and farmer usability results.
+              </p>
+            </div>
+            <div class="download-card-bottom">
+              <span class="download-date">Final Evaluation • SLIIT</span>
+              <div class="download-actions">
+                <span class="badge badge-blue">Scheduled</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       RESEARCH TEAM & SUPERVISORS (ABOUT US)
+       ========================================================================== -->
+  <section class="team-section" id="team">
+    <div class="container">
+      <div class="center-text">
+        <div class="section-tag">Academic Team</div>
+        <h2 class="section-title">Meet Our Research Team & Supervisors</h2>
+        <p class="section-subtitle">
+          Guided by experienced academic faculty and agricultural domain veterans from the Department of Export Agriculture and SLIIT Faculty of Computing.
+        </p>
+      </div>
+
+      <!-- Supervisors Banner -->
+      <div class="supervisors-banner">
+        <h3>Project Supervision Panel</h3>
+        <div class="supervisors-grid">
+          
+          <div class="supervisor-card">
+            <div class="avatar-wrapper">
+              <img src="assets/images/jenny.png" alt="Ms. Jenny Krishara" class="avatar-img">
+            </div>
+            <h4 class="person-name">Ms. Jenny Krishara</h4>
+            <div class="person-role">Supervisor</div>
+            <p class="person-dept">
+              Faculty of Computing<br>
+              Sri Lanka Institute of Information Technology (SLIIT)
+            </p>
+          </div>
+
+          <div class="supervisor-card">
+            <div class="avatar-wrapper">
+              <img src="assets/images/dinuka.png" alt="Dr. Dinuka Wijendra" class="avatar-img">
+            </div>
+            <h4 class="person-name">Dr. Dinuka Wijendra</h4>
+            <div class="person-role">Co-Supervisor</div>
+            <p class="person-dept">
+              Faculty of Computing<br>
+              Sri Lanka Institute of Information Technology (SLIIT)
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Student Research Group Members -->
+      <div class="team-members-wrapper">
+        <h3>Undergraduate Student Researchers</h3>
+        <div class="students-grid">
+          
+          <!-- Member 1 -->
+          <div class="student-card">
+            <div>
+              <div class="avatar-wrapper">
+                <img src="assets/images/imasha.png" alt="K.J.M.D.Imasha" class="avatar-img">
+              </div>
+              <h4 class="person-name">K.J.M.D.Imasha</h4>
+              <div class="student-id">IT22097460</div>
+              <div class="person-role">Leaf Disease Detection Lead</div>
+              <p class="student-sub-obj">
+                Cardamom Leaf Disease Detection through images covering 5 prevalent Sri Lankan highland pathologies.
+              </p>
+            </div>
+            <a href="mailto:it22097460@my.sliit.lk" class="student-contact-link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>it22097460@my.sliit.lk</span>
+            </a>
+          </div>
+
+          <!-- Member 2 -->
+          <div class="student-card">
+            <div>
+              <div class="avatar-wrapper">
+                <img src="assets/images/dissanayake.jpg" alt="Dissanayake K.S.S." class="avatar-img">
+              </div>
+              <h4 class="person-name">Dissanayake K.S.S.</h4>
+              <div class="student-id">IT22223180</div>
+              <div class="person-role">Smart Pod Monitoring Lead</div>
+              <p class="student-sub-obj">
+                Smart Pod Monitoring & Caring System combining maturity checking and capsule borer detection via YOLO.
+              </p>
+            </div>
+            <a href="mailto:it22223180@my.sliit.lk" class="student-contact-link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>it22223180@my.sliit.lk</span>
+            </a>
+          </div>
+
+          <!-- Member 3 -->
+          <div class="student-card">
+            <div>
+              <div class="avatar-wrapper">
+                <img src="assets/images/delpechithra.png" alt="D.I.Delpechithra" class="avatar-img">
+              </div>
+              <h4 class="person-name">D.I.Delpechithra</h4>
+              <div class="student-id">IT22228758</div>
+              <div class="person-role">Market Prediction Analyst</div>
+              <p class="student-sub-obj">
+                Market Prediction & Harvest Analysis modeling Sri Lankan spice auction dynamics and harvest-based revenue.
+              </p>
+            </div>
+            <a href="mailto:it22228758@my.sliit.lk" class="student-contact-link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>it22228758@my.sliit.lk</span>
+            </a>
+          </div>
+
+          <!-- Member 4 -->
+          <div class="student-card">
+            <div>
+              <div class="avatar-wrapper">
+                <img src="assets/images/kulasooriya.png" alt="Kulasooriya K.S.D" class="avatar-img">
+              </div>
+              <h4 class="person-name">Kulasooriya K.S.D</h4>
+              <div class="student-id">IT22158840</div>
+              <div class="person-role">Pod Quality Grading Lead</div>
+              <p class="student-sub-obj">
+                Cardamom Pod Quality Grading utilizing colorimetry, geometric profiling, YOLOv10 defect analysis, and batch modes.
+              </p>
+            </div>
+            <a href="mailto:it22158840@my.sliit.lk" class="student-contact-link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>it22158840@my.sliit.lk</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CONTACT US SECTION
+       ========================================================================== -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        
+        <div class="contact-info-panel">
+          <div class="section-tag">Get in Touch</div>
+          <h3>Connect with Cardamo Research</h3>
+          <p>
+            Have inquiries regarding our research methodology, highland cardamom dataset access, agricultural cooperative collaborations, or system evaluation? Send us a message or reach out via official channels.
+          </p>
+
+          <div class="contact-meta-cards">
+            <div class="meta-card">
+              <div class="meta-icon">📍</div>
+              <div>
+                <div class="meta-label">Academic Institution</div>
+                <div class="meta-value">Sri Lanka Institute of Information Technology (SLIIT), Malabe Campus</div>
+              </div>
+            </div>
+
+            <div class="meta-card">
+              <div class="meta-icon">🏛️</div>
+              <div>
+                <div class="meta-label">Department & Faculty</div>
+                <div class="meta-value">Department of Information Technology, Faculty of Computing</div>
+              </div>
+            </div>
+
+            <div class="meta-card">
+              <div class="meta-icon">🎯</div>
+              <div>
+                <div class="meta-label">Research Specialization</div>
+                <div class="meta-value">Information Technology & Intelligent Systems</div>
+              </div>
+            </div>
+
+            <div class="meta-card">
+              <div class="meta-icon">✉️</div>
+              <div>
+                <div class="meta-label">Project Inquiries Email</div>
+                <div class="meta-value">cardamo.research@sliit.lk</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Semantic HTML Contact Form (Zero JS) -->
+        <div class="contact-form-panel">
+          <h4 style="font-size: 1.4rem; color: #ffffff; margin-bottom: 0.5rem;">Send an Inquiry</h4>
+          <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 1.75rem;">
+            Submit your feedback or question directly to the research team.
+          </p>
+
+          <form action="mailto:cardamo.research@sliit.lk" method="POST" enctype="text/plain">
+            <div class="form-group">
+              <label for="senderName" class="form-label">Full Name</label>
+              <input type="text" id="senderName" name="name" class="form-control" placeholder="e.g. Dr. Kasun Silva / Farmer Representative" required>
+            </div>
+
+            <div class="form-group">
+              <label for="senderEmail" class="form-label">Email Address</label>
+              <input type="email" id="senderEmail" name="email" class="form-control" placeholder="e.g. kasun@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="inquirySubject" class="form-label">Subject</label>
+              <input type="text" id="inquirySubject" name="subject" class="form-control" placeholder="e.g. Cardamom Dataset Collaboration / Field Trial" required>
+            </div>
+
+            <div class="form-group">
+              <label for="inquiryMsg" class="form-label">Message</label>
+              <textarea id="inquiryMsg" name="message" class="form-control" placeholder="Type your inquiry or feedback for the research group..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              <span>Send Message</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        
+        <div class="footer-brand">
+          <div style="display: flex; align-items: center; gap: 0.85rem; margin-bottom: 1rem;">
+            <img src="assets/images/logo.png" alt="Cardamo Logo" class="brand-logo-img">
+            <h4 style="margin-bottom: 0;">CARDAMO</h4>
+          </div>
+          <p>
+            ML-Driven Smart Cardamom Cultivation Management System. An academic undergraduate research project conducted at the Faculty of Computing, Sri Lanka Institute of Information Technology (SLIIT).
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Core Modules</h5>
+          <div class="footer-links-list">
+            <a href="#methodology" class="footer-link">Leaf Disease Detection</a>
+            <a href="#methodology" class="footer-link">Pod Monitoring & Borer</a>
+            <a href="#methodology" class="footer-link">Market Prediction</a>
+            <a href="#methodology" class="footer-link">Pod Quality Grading</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5>Navigation</h5>
+          <div class="footer-links-list">
+            <a href="#home" class="footer-link">Home</a>
+            <a href="#project-scope" class="footer-link">Project Scope</a>
+            <a href="#technologies" class="footer-link">Technology Stack</a>
+            <a href="#milestones" class="footer-link">Milestones</a>
+            <a href="#downloads" class="footer-link">Downloads</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5>Affiliations</h5>
+          <div class="footer-links-list">
+            <span class="footer-link" style="color: #cbd5e1;">SLIIT Faculty of Computing</span>
+            <span class="footer-link" style="color: #cbd5e1;">Cardamo Research Project</span>
+            <span class="footer-link" style="color: #cbd5e1;">Dept. of Export Agriculture (DOA)</span>
+            <span class="footer-link" style="color: #cbd5e1;">HARTI Knuckles Studies</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>
+          © 2026 Cardamo Research Group. All Rights Reserved. Sri Lanka Institute of Information Technology (SLIIT).
+        </div>
+        <a href="#home" class="back-to-top-btn" aria-label="Back to top of page">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
