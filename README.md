@@ -18,7 +18,7 @@ Cardamo addresses the 25%–40% seasonal crop losses faced by small and medium-s
    - Detects 5 prevalent local diseases: Leaf Blight, Leaf Spot, Mosaic Disease, Chlorotic Streak, and Vein Clearing.
 2. **Smart Pod Monitoring and Caring System** — *Dissanayake K.S.S. (IT22223180)*
    - Dual maturity verification and YOLO-based Capsule Borer damage localization.
-3. **Market Prediction and Harvest Analysis** — *D.I.Delpechithra (IT22228758)*
+3. **Market Prediction and Harvest Analysis** — *D.I.Delpechitra (IT22228758)*
    - Quantity-parameterized price forecasting and seasonal auction movement analytics.
 4. **Cardamom Pod Quality Grading** — *Kulasooriya K.S.D (IT22158840)*
    - Colorimetric RGB/HSV analysis, pod diameter calculation, YOLOv10 defect identification, and batch grading mapped to Department of Export Agriculture (DOA) & EDB standards.
