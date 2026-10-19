@@ -1454,7 +1454,7 @@
               <div class="meta-icon">✉️</div>
               <div>
                 <div class="meta-label">Project Inquiries Email</div>
-                <div class="meta-value">cardamo.research@sliit.lk</div>
+                <div class="meta-value">sanilkasrimal01@gmail.com</div>
               </div>
             </div>
           </div>
@@ -1467,25 +1467,30 @@
             Submit your feedback or question directly to the research team.
           </p>
 
-          <form action="mailto:cardamo.research@sliit.lk" method="POST" enctype="text/plain">
+          <form action="https://formsubmit.co/sanilkasrimal01@gmail.com" method="POST">
+            <!-- FormSubmit Pure HTML Configurations (Zero JS) -->
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_autoresponse" value="Thank you for contacting the Cardamo Research Project Team. We have received your inquiry.">
+
             <div class="form-group">
               <label for="senderName" class="form-label">Full Name</label>
-              <input type="text" id="senderName" name="name" class="form-control" placeholder="e.g. Dr. Kasun Silva / Farmer Representative" required>
+              <input type="text" id="senderName" name="Sender Name" class="form-control" placeholder="e.g. Dr. Kasun Silva / Farmer Representative" required>
             </div>
 
             <div class="form-group">
               <label for="senderEmail" class="form-label">Email Address</label>
-              <input type="email" id="senderEmail" name="email" class="form-control" placeholder="e.g. kasun@example.com" required>
+              <input type="email" id="senderEmail" name="Sender Email" class="form-control" placeholder="e.g. kasun@example.com" required>
             </div>
 
             <div class="form-group">
               <label for="inquirySubject" class="form-label">Subject</label>
-              <input type="text" id="inquirySubject" name="subject" class="form-control" placeholder="e.g. Cardamom Dataset Collaboration / Field Trial" required>
+              <input type="text" id="inquirySubject" name="_subject" class="form-control" placeholder="e.g. Cardamom Dataset Collaboration / Field Trial" required>
             </div>
 
             <div class="form-group">
               <label for="inquiryMsg" class="form-label">Message</label>
-              <textarea id="inquiryMsg" name="message" class="form-control" placeholder="Type your inquiry or feedback for the research group..." required></textarea>
+              <textarea id="inquiryMsg" name="Inquiry Message" class="form-control" placeholder="Type your inquiry or feedback for the research group..." required></textarea>
             </div>
 
             <button type="submit" class="btn btn-primary" style="width: 100%;">
