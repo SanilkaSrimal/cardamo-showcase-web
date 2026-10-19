@@ -1547,6 +1547,12 @@ body:has(#contact:target) .nav-link[href="#contact"],
   border: 1px solid rgba(245, 158, 11, 0.3);
 }
 
+.doc-badge-sheet {
+  background: rgba(16, 185, 129, 0.15);
+  color: #34d399;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
 .download-title {
   font-size: 1.25rem;
   font-weight: 700;
